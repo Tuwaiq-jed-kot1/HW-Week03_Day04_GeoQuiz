@@ -15,4 +15,26 @@
     <string name="next_button">Next</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgment_toast">Cheating is wrong.</string>
+    <string name="Answer">
+        Question 1 : Canberra is the capital of Australia, true
+----------------------------------------------------------------------------------
+        Question 2 : The Pacific Ocean is larger than
+        the Atlantic Ocean, true
+----------------------------------------------------------------------------------
+        Question 3 :The Suez Canal connects the Red Sea
+        and the Indian Ocean., false
+----------------------------------------------------------------------------------
+        Question 4 :The source of the Nile River is in Egypt,false
+----------------------------------------------------------------------------------
+        Question 5 :The Amazon River is the longest river
+        in the Americas., true
+----------------------------------------------------------------------------------
+        Question 6 :The Amazon River is the longest river
+        in the Americas., true
+    </string>
+
 </resources>
