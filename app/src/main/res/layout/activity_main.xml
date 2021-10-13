@@ -31,7 +31,13 @@
             android:text="@string/false_button"/>
 
     </LinearLayout>
-
+    <Button
+        android:id="@+id/cheat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="@string/cheat_button" />
     <Button
         android:layout_width="wrap_content"
         android:id="@+id/next_button"
@@ -39,5 +45,11 @@
         android:text="@string/next_button"
         android:drawableEnd="@drawable/arrow_right"
         android:drawablePadding="4dp"/>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/display_button"
+        android:layout_height="wrap_content"
+        android:text="@string/display_button"
+        android:drawableEnd="@drawable/arrow_right"
+        android:drawablePadding="4dp"/>
 </LinearLayout>
