@@ -15,4 +15,20 @@
     <string name="next_button">Next</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgment_toast">Cheating is wrong.</string>
+    <string name="display_a_q">Display A and Q</string>
+    <string name="question_australia_AandQ">1.Canberra is the capital of Australia (True)</string>
+    <string name="question_oceans_AandQ">2.The Pacific Ocean is larger than
+        the Atlantic Ocean (True)</string>
+    <string name="question_mideast_AandQ">3.The Suez Canal connects the Red Sea
+        and the Indian Ocean (False)</string>
+    <string name="question_africa_AandQ">4.The source of the Nile River is in Egypt (False)</string>
+    <string name="question_asia_AandQ">5.Lake Baikal is the world\'s oldest and deepest
+        freshwater lake (True)</string>
+    <string name="question_americas_AandQ">6.The Amazon River is the longest river
+        in the Americas (True)</string>
+
 </resources>
