@@ -8,4 +8,4 @@ The assignment will add a further condition to the GeoQuiz Project that we appli
 
 ## Part Two - Create new Activity
 ---
-- Create new Activity that will display all questions with the corresponding correct answer. You can access this activity through `MainActivity`.
+- Create new Activity that will display all questions with the correct answers. You can access this activity through `MainActivity`.
