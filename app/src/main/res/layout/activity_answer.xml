@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/head_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="@string/questions_with_answers"
+        android:textSize="21sp" />
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/question_australia"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/true_button"
+            android:textSize="15sp" />
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/q2"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/question_oceans"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/true_button"
+        android:textSize="15sp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/q3"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/question_mideast"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/a3"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/false_button"
+        android:textSize="15sp" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/q4"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/question_africa"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/a4"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/false_button"
+        android:textSize="15sp" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/q5"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/question_americas"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/a5"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/true_button"
+        android:textSize="15sp" />
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/q6"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/question_asia"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/a6"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/true_button"
+        android:textSize="15sp" />
+
+</LinearLayout>
+
+
+<Button
+    android:id="@+id/btnBack"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:text="@string/btnBack"
+    android:drawableStart="@drawable/arrow_left"
+    android:drawablePadding="4dp"/>
+
+</LinearLayout>
