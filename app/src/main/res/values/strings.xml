@@ -15,4 +15,7 @@
     <string name="next_button">Next</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
+    <string name="show_answer_button" />
+    <string name="warning_text" />
+    <string name="cheat_button" />
 </resources>
