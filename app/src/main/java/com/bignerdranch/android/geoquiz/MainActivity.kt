@@ -1,5 +1,7 @@
 package com.bignerdranch.android.geoquiz
 
+import android.content.ClipData.newIntent
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -11,13 +13,17 @@ import androidx.lifecycle.ViewModelProvider
 
 private const val TAG = "MainActivity"
 private const val KEY_INDEX = "index"
+private const val REQUEST_CODE_CHEAT = 0
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var trueButton: Button
     private lateinit var falseButton: Button
     private lateinit var nextButton: Button
+    private lateinit var cheatButton: Button
     private lateinit var questionTextView: TextView
+    private lateinit var correctAnswers: Button
 
     private val quizViewModel: QuizViewModel by lazy {
         ViewModelProvider(this).get(QuizViewModel::class.java)
@@ -30,8 +36,11 @@ class MainActivity : AppCompatActivity() {
 
         trueButton = findViewById(R.id.true_button)
         falseButton = findViewById(R.id.false_button)
+        cheatButton = findViewById(R.id.cheat_button)
         nextButton = findViewById(R.id.next_button)
         questionTextView = findViewById(R.id.question_text_view)
+        correctAnswers = findViewById(R.id.correct_Answers)
+
 
         trueButton.setOnClickListener { view: View ->
             checkAnswer(true)
@@ -45,8 +54,28 @@ class MainActivity : AppCompatActivity() {
             quizViewModel.moveToNext()
             updateQuestion()
         }
+        cheatButton.setOnClickListener {
+            // Start CheatActivity
+            val answerIsTrue = quizViewModel.currentQuestionAnswer
+            val intent = CheatActivity.newIntent(this@MainActivity, answerIsTrue)
 
-        updateQuestion()
+            startActivityForResult(intent, REQUEST_CODE_CHEAT)
+
+        }
+        cheatButton.setOnClickListener {
+            // Start CheatActivity
+            val answerIsTrue = quizViewModel.currentQuestionAnswer
+            val intent = CheatActivity.newIntent(this@MainActivity, answerIsTrue)
+
+            startActivityForResult(intent, REQUEST_CODE_CHEAT)
+        }
+
+            updateQuestion()
+    }
+    correctAnswers.setOnClickListener {
+
+        val intent = Intent(this,CoreectAnswers::class.java)
+        startActivity(intent)
     }
 
     override fun onStart() {
