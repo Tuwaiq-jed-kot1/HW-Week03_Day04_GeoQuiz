@@ -8,8 +8,9 @@ private const val TAG = "QuizViewModel"
 class QuizViewModel : ViewModel() {
 
     var currentIndex = 0
+    var isCheater = false
 
-    private val questionBank = listOf(
+     val questionBank = listOf(
         Question(R.string.question_australia, true),
         Question(R.string.question_oceans, true),
         Question(R.string.question_mideast, false),
@@ -27,4 +28,11 @@ class QuizViewModel : ViewModel() {
     fun moveToNext() {
         currentIndex = (currentIndex + 1) % questionBank.size
     }
+
+    fun display(){
+        var text : String
+        questionBank.forEach { quastion -> text = currentQuestionAnswer.toString()}
+
+    }
+
 }
