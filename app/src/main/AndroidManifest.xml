@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Part2"
+            android:exported="true" />
+        <activity
             android:name=".CheatActivity"
             android:exported="true" />
         <activity android:name=".MainActivity">

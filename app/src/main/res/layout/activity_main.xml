@@ -47,4 +47,11 @@
         android:drawableEnd="@drawable/arrow_right"
         android:drawablePadding="4dp"/>
 
+    <Button
+        android:id="@+id/answers_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/answers_sheet"/>
+
 </LinearLayout>

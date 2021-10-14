@@ -12,6 +12,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+//import android.content.Intent
 import com.bignerdranch.android.geoquiz.MainActivity.Companion.newIntent
 
 private const val TAG = "MainActivity"
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var nextButton: Button
     private lateinit var cheatButton: Button
     private lateinit var questionTextView: TextView
+    private lateinit var answersSheetButton: Button
 
     private val quizViewModel: QuizViewModel by lazy {
         ViewModelProvider(this).get(QuizViewModel::class.java)
@@ -49,6 +51,13 @@ class MainActivity : AppCompatActivity() {
         nextButton = findViewById(R.id.next_button)
         cheatButton = findViewById(R.id.cheat_button)
         questionTextView = findViewById(R.id.question_text_view)
+        answersSheetButton = findViewById(R.id.answers_button)
+
+        answersSheetButton = findViewById(R.id.answers_button)
+        answersSheetButton.setOnClickListener {
+            val i = Intent(this,Part2::class.java)
+            startActivity(i)
+        }
 
         trueButton.setOnClickListener { view: View ->
             checkAnswer(true)
@@ -69,6 +78,9 @@ class MainActivity : AppCompatActivity() {
             val intent = CheatActivity.newIntent(this@MainActivity, answerIsTrue)
             //startActivity(intent)
             startActivityForResult(intent, REQUEST_CODE_CHEAT)
+        }
+        answersSheetButton.setOnClickListener {
+
         }
 
         updateQuestion()
