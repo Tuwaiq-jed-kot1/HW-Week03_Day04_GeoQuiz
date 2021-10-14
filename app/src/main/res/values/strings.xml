@@ -15,4 +15,9 @@
     <string name="next_button">Next</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
+    <string name="warning_text">t</string>
+    <string name="show_answer_button">show</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgment_toast">juj</string>
+    <string name="t_page">"display all correct  questions "</string>
 </resources>

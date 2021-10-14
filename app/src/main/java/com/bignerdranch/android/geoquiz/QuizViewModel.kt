@@ -2,12 +2,15 @@ package com.bignerdranch.android.geoquiz
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
+import java.nio.file.Paths.get
 
 private const val TAG = "QuizViewModel"
 
-class QuizViewModel : ViewModel() {
+open class QuizViewModel : ViewModel() {
 
     var currentIndex = 0
+    var isCheater = false
+
 
     private val questionBank = listOf(
         Question(R.string.question_australia, true),
@@ -24,7 +27,15 @@ class QuizViewModel : ViewModel() {
     val currentQuestionText: Int
         get() = questionBank[currentIndex].textResId
 
-    fun moveToNext() {
+    open fun moveToNext() {
         currentIndex = (currentIndex + 1) % questionBank.size
     }
+
+    open fun ct (){
+     if (currentQuestionAnswer == true){
+        return 
+     }
+    }
+
 }
+
