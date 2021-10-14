@@ -34,6 +34,18 @@
 
     <Button
         android:layout_width="wrap_content"
+        android:id="@+id/cheat_button"
+        android:layout_height="wrap_content"
+        android:text="@string/cheat_button"
+        android:drawablePadding="4dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/dAll_button"
+        android:layout_height="wrap_content"
+        android:text="@string/dAll_button"
+        android:drawablePadding="4dp"/>
+    <Button
+        android:layout_width="wrap_content"
         android:id="@+id/next_button"
         android:layout_height="wrap_content"
         android:text="@string/next_button"
