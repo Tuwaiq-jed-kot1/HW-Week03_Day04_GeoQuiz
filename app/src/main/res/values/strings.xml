@@ -24,5 +24,6 @@
     <string name="judgment_toast">Cheating is wrong.</string>
     <string name="check_the_cuerct_answer">Check the cuerct answer</string>
     <string name="stack_button">Stack Button</string>
+    <string name="all_question">All question</string>
 
 </resources>

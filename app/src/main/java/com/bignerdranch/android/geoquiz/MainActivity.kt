@@ -47,15 +47,9 @@ class MainActivity : AppCompatActivity() {
 
         checkQutstion.setOnClickListener {
 
-            all_Question.add("Canberra is the capital of Australia.\n")
-            all_Question.add("The Pacific Ocean is larger than the Atlantic Ocean.\n")
-            all_Question.add("The Suez Canal connects the Red Sea and the Indian Ocean.\n")
-            all_Question.add("The source of the Nile River is in Egypt.\n")
-            all_Question.add("The Amazon River is the longest river in the Americas.\n")
-            all_Question.add("Lake Baikal is the world's oldest and deepest freshwater lake.")
 
             val intent = Intent(this@MainActivity, AllQuestion::class.java)
-            intent.putExtra("key", all_Question)
+
             startActivity(intent)
 
         }
