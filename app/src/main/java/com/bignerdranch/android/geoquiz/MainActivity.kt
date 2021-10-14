@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var falseButton: Button
     private lateinit var nextButton: Button
     private lateinit var questionTextView: TextView
-
+    private lateinit var cheatButton: Button
     private val quizViewModel: QuizViewModel by lazy {
         ViewModelProvider(this).get(QuizViewModel::class.java)
     }
@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         falseButton = findViewById(R.id.false_button)
         nextButton = findViewById(R.id.next_button)
         questionTextView = findViewById(R.id.question_text_view)
+        cheatButton = findViewById(R.id.cheat_button)
 
         trueButton.setOnClickListener { view: View ->
             checkAnswer(true)
@@ -47,16 +48,23 @@ class MainActivity : AppCompatActivity() {
         }
 
         updateQuestion()
+        cheatButton.setOnClickListener {
+            //Start CheatActivity
+
+        }
+        updateQuestion()
     }
 
     override fun onStart() {
         super.onStart()
         Log.d(TAG, "onStart() called")
+
     }
 
     override fun onResume() {
         super.onResume()
         Log.d(TAG, "onResume() called")
+
     }
 
     override fun onPause() {
