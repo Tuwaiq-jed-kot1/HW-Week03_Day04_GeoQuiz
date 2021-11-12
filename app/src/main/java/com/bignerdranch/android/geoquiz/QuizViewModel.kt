@@ -29,10 +29,10 @@ class QuizViewModel : ViewModel() {
         currentIndex = (currentIndex + 1) % questionBank.size
     }
 
-    fun display(){
-        var text : String
-        questionBank.forEach { quastion -> text = currentQuestionAnswer.toString()}
-
-    }
+//    fun display(){
+//        var text : String
+//        questionBank.forEach { quastion -> text = currentQuestionAnswer.toString()}
+//
+//    }
 
 }

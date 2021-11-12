@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/HW-Week03_Day04_GeoQuiz/app/src/main/res/layout-land/activity_main.xml" value="0.15211640211640212" />
         <entry key="..\:/Users/rino0/AndroidStudioProjects/HW-Week03_Day04_GeoQuiz/app/src/main/res/layout/activity_cheat.xml" value="0.1796875" />
-        <entry key="..\:/Users/rino0/AndroidStudioProjects/HW-Week03_Day04_GeoQuiz/app/src/main/res/layout/activity_display.xml" value="0.22" />
-        <entry key="..\:/Users/rino0/AndroidStudioProjects/HW-Week03_Day04_GeoQuiz/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/HW-Week03_Day04_GeoQuiz/app/src/main/res/layout/activity_display.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/HW-Week03_Day04_GeoQuiz/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/HW-Week03_Day04_GeoQuiz/app/src/main/res/layout/listview_item.xml" value="0.1" />
+        <entry key="..\:/Users/rino0/AndroidStudioProjects/HW-Week03_Day04_GeoQuiz/app/src/main/res/layout/recyclerview_item.xml" value="0.3333333333333333" />
       </map>
     </option>
   </component>

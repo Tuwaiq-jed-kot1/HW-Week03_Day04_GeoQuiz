@@ -62,8 +62,6 @@ class MainActivity : AppCompatActivity() {
 
         allAnswersButton.setOnClickListener {
             startActivity(Intent(this, DisplayActivity::class.java))
-
-            //startActivityForResult(i,requastCodeVar)
             }
 
         updateQuestion()
