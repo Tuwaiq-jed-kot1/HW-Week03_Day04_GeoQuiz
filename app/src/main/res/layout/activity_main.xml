@@ -33,11 +33,26 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/cheat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/cheat_button" />
+
+    <Button
         android:layout_width="wrap_content"
         android:id="@+id/next_button"
         android:layout_height="wrap_content"
         android:text="@string/next_button"
         android:drawableEnd="@drawable/arrow_right"
+        android:drawablePadding="4dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/answersList_button"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/show_all_answers_button"
         android:drawablePadding="4dp"/>
 
 </LinearLayout>
